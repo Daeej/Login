@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+<EditText
+android:id="@+id/reg_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:ems="10"
+android:inputType =""
+android:hint = "Enter username" />
+
+
+<EditText
+android:id="@+id/reg_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:ems="10"
+android:inputType ="textPassword"
+android:hint = "Enter password" />
+/>
+
+<EditText
+android:id="@+id/con_pass"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:ems="10"
+android:inputType ="textPassword"
+android:hint = "Confirm password"
+/>
+
+<Button
+android:id="@+id/user_reg"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:text = "Register"
+/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Go Back" />
+</LinearLayout>
