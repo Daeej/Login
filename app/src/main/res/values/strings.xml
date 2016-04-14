@@ -23,5 +23,9 @@
     <string name="Dorm_Decor"> Dorm Decor</string>
     <string name="Clothing"> Clothing</string>
     <string name="title_activity_product_list">ProductListActivity</string>
+    <string name="title_activity_product_form">ProductFormActivity</string>
+
+    <string name="product_info"> Product Information</string>
+
 
 </resources>

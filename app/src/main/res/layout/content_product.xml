@@ -16,13 +16,13 @@
         android:clickable="false"
         android:contextClickable="false"
         android:textAlignment="center">
-        //http://code.tutsplus.com/tutorials/android-essentials-creating-simple-user-forms--mobile-1758//
+
 
         <TextView
             android:id="@+id/TextViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Full Name"
+            android:text="@string/product_info"
             android:textSize="10pt">
         </TextView>
 
@@ -42,6 +42,42 @@
             android:inputType="textEmailAddress"
             android:layout_width="fill_parent">
         </EditText>
+        <EditText
+            android:id="@+id/EditTextFeedbackBody"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedbackbody"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:layout_width="match_parent"
+            android:text="Please provide a brief description about the product that you are trying to sell">
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditPrice"
+            android:layout_height="wrap_content"
+            android:hint="$$"
+            android:inputType="text"
+            android:lines="5"
+            android:layout_width="match_parent"
+            android:text="How much you want to sell it?">
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditContact"
+            android:layout_height="wrap_content"
+            android:hint="Phone # or Eamil"
+            android:inputType="text"
+            android:lines="5"
+            android:layout_width="match_parent"
+            android:text="Enter your contact info">
+        </EditText>
+
+        <Button
+            android:id="@+id/ButtonSendFeedback"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_width="wrap_content">
+        </Button>
 
         <resources>
 
@@ -56,43 +92,7 @@
                 android:clickable="false">
             </Spinner>
 
-            <EditText
-                android:id="@+id/EditTextFeedbackBody"
-                android:layout_height="wrap_content"
-                android:hint="@string/feedbackbody"
-                android:inputType="textMultiLine"
-                android:lines="5"
-                android:layout_width="match_parent"
-                android:text="Please provide a brief description about the product that you are trying to sell">
-            </EditText>
 
-            <EditText
-                android:id="@+id/EditPrice"
-                android:layout_height="wrap_content"
-                android:hint="$$"
-                android:inputType="text"
-                android:lines="5"
-                android:layout_width="match_parent"
-                android:text="How much you want to sell it?">
-            </EditText>
-
-            <EditText
-                android:id="@+id/EditContact"
-                android:layout_height="wrap_content"
-                android:hint="$$"
-                android:inputType="text"
-                android:lines="5"
-                android:layout_width="match_parent"
-                android:text="Enter your contact info">
-            </EditText>
-
-            <Button
-                android:id="@+id/ButtonSendFeedback"
-                android:layout_height="wrap_content"
-                android:text="Save"
-                android:onClick="sendFeedback"
-                android:layout_width="wrap_content">
-            </Button>
 
         </resources>
 

@@ -18,9 +18,9 @@ public class ProductListActivity extends AppCompatActivity {
 
         Add = (Button)findViewById(R.id.Addproduct);
         Add.setOnClickListener(new View.OnClickListener() {
-
+            @Override
             public void onClick(View v) {
-                Intent ProductFormEntry = new Intent(getApplicationContext(), com.login.ProductActivity.class);
+                Intent ProductFormEntry = new Intent(getBaseContext(), com.login.ProductActivity.class);
                 startActivity(ProductFormEntry);
             }
         });
