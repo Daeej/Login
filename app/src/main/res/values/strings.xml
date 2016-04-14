@@ -4,4 +4,24 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_danesmainpage">Danesmainpage</string>
+    <string name="title_activity_product">ProductActivity</string>
+
+    <string name="feedbacktype">Product Type</string>
+    <string name="feedbackbody"> Describe your product</string>
+
+    <string-array name="feedbacktypelist">
+        <item>@string/TextBooks</item>
+        <item>@string/Gym_Equipment</item>
+        <item>@string/Electronics</item>
+        <item>@string/Dorm_Decor</item>
+        <item> @string/Clothing</item>
+    </string-array>
+
+    <string name="TextBooks"> TextBooks</string>
+    <string name="Electronics"> Electronics</string>
+    <string name="Gym_Equipment"> Gym Equipment</string>
+    <string name="Dorm_Decor"> Dorm Decor</string>
+    <string name="Clothing"> Clothing</string>
+    <string name="title_activity_product_list">ProductListActivity</string>
+
 </resources>

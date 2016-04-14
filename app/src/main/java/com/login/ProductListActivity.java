@@ -9,22 +9,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class Danesmainpage extends AppCompatActivity {
-Button start;
+public class ProductListActivity extends AppCompatActivity {
+ Button Add;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_danesmainpage);
+        setContentView(R.layout.activity_product_list);
 
-        start = (Button)findViewById(R.id.GetStarted);
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
+        Add = (Button)findViewById(R.id.Addproduct);
+        Add.setOnClickListener(new View.OnClickListener() {
+
             public void onClick(View v) {
-                Intent ProductList = new Intent(getApplicationContext(), com.login.ProductListActivity.class);
-                startActivity(ProductList);
+                Intent ProductFormEntry = new Intent(getApplicationContext(), com.login.ProductActivity.class);
+                startActivity(ProductFormEntry);
             }
         });
-
 
     }
 
