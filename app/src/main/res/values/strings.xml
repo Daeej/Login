@@ -10,18 +10,14 @@
     <string name="feedbackbody"> Describe your product</string>
 
     <string-array name="feedbacktypelist">
-        <item>@string/TextBooks</item>
-        <item>@string/Gym_Equipment</item>
-        <item>@string/Electronics</item>
-        <item>@string/Dorm_Decor</item>
-        <item> @string/Clothing</item>
+        <item>TextBooks</item>
+        <item>Gym_Equipment</item>
+        <item>Electronics</item>
+        <item>Dorm_Decor</item>
+        <item>Clothing</item>
     </string-array>
 
-    <string name="TextBooks"> TextBooks</string>
-    <string name="Electronics"> Electronics</string>
-    <string name="Gym_Equipment"> Gym Equipment</string>
-    <string name="Dorm_Decor"> Dorm Decor</string>
-    <string name="Clothing"> Clothing</string>
+
     <string name="title_activity_product_list">ProductListActivity</string>
     <string name="title_activity_product_form">ProductFormActivity</string>
 

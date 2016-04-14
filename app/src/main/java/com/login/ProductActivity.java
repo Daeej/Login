@@ -17,7 +17,12 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class ProductActivity extends Activity {
-  EditText name, email, producttype, des, price, contact;
+  EditText name;
+    EditText email;
+    Spinner producttype;
+    EditText des;
+    EditText price;
+    EditText contact;
     String NAME, EMAIL, PRODUCTTYPE, DES, PRICE, CONTACT;
     Button save;
     Context ctx = this;
@@ -25,19 +30,21 @@ public class ProductActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-        name = (EditText) findViewById(R.id.EditTextName);
-        email = (EditText) findViewById(R.id.EditTextEmail);
-        producttype = (EditText) findViewById(R.id.SpinnerFeedbackType);
-        des = (EditText) findViewById(R.id.EditTextFeedbackBody);
-        price = (EditText) findViewById(R.id.EditPrice);
-        contact = (EditText) findViewById(R.id.EditContact);
-        save = (Button)findViewById(R.id.ButtonSendFeedback);
+
         save.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
+                name = (EditText) findViewById(R.id.EditTextName);
+                email = (EditText) findViewById(R.id.EditTextEmail);
+                producttype = (Spinner) findViewById(R.id.SpinnerFeedbackType);
+                des = (EditText) findViewById(R.id.EditTextFeedbackBody);
+                price = (EditText) findViewById(R.id.EditPrice);
+                contact = (EditText) findViewById(R.id.EditContact);
+                save = (Button)findViewById(R.id.ButtonSendFeedback);
+
                 NAME = name.getText().toString();
                 EMAIL = email.getText().toString();
-                PRODUCTTYPE = producttype.getText().toString();
+                PRODUCTTYPE = producttype.getSelectedItem().toString();
                 DES = des.getText().toString();
                 PRICE = price.getText().toString();
                 CONTACT = contact.getText().toString();

@@ -79,7 +79,7 @@
             android:layout_width="wrap_content">
         </Button>
 
-        <resources>
+
 
 
             <Spinner
@@ -94,7 +94,7 @@
 
 
 
-        </resources>
+
 
 
 
