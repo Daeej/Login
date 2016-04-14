@@ -30,17 +30,17 @@ public class ProductActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-
+        name = (EditText) findViewById(R.id.EditTextName);
+        email = (EditText) findViewById(R.id.EditTextEmail);
+        producttype = (Spinner) findViewById(R.id.SpinnerFeedbackType);
+        des = (EditText) findViewById(R.id.EditTextFeedbackBody);
+        price = (EditText) findViewById(R.id.EditPrice);
+        contact = (EditText) findViewById(R.id.EditContact);
+        save = (Button)findViewById(R.id.ButtonSendFeedback);
         save.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                name = (EditText) findViewById(R.id.EditTextName);
-                email = (EditText) findViewById(R.id.EditTextEmail);
-                producttype = (Spinner) findViewById(R.id.SpinnerFeedbackType);
-                des = (EditText) findViewById(R.id.EditTextFeedbackBody);
-                price = (EditText) findViewById(R.id.EditPrice);
-                contact = (EditText) findViewById(R.id.EditContact);
-                save = (Button)findViewById(R.id.ButtonSendFeedback);
+
 
                 NAME = name.getText().toString();
                 EMAIL = email.getText().toString();
