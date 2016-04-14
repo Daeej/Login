@@ -10,12 +10,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.login.Danesmainpage"
+    android:background="#4f0358"
+    android:clickable="false"
     tools:showIn="@layout/activity_danesmainpage">
-
-    <Button
-        android:id="@+id/GetStarted"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text = "Get Started" />
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Danes List"
+            android:id="@+id/splashLogo"
+            android:layout_gravity="center"
+            android:textColor="#ffd700"
+            android:focusableInTouchMode="false"
+            android:typeface="serif"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textSize="55sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_started"
+            android:id="@+id/GetStarted"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <ImageView
+            android:layout_width="189dp"
+            android:layout_height="189dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/splash_logo" />
+    </FrameLayout>
+
+
 
 </RelativeLayout>
+
+
+
+
+
+
+
+
+

@@ -26,6 +26,6 @@
     <string name="title_activity_product_form">ProductFormActivity</string>
 
     <string name="product_info"> Product Information</string>
-
+    <string name="get_started"> Get Started</string>
 
 </resources>

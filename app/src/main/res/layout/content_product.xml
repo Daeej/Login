@@ -22,7 +22,7 @@
             android:id="@+id/TextViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/product_info"
+            android:text="product_info"
             android:textSize="10pt">
         </TextView>
 
