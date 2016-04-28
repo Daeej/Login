@@ -23,5 +23,6 @@
 
     <string name="product_info"> Product Information</string>
     <string name="get_started"> Get Started</string>
+    <string name="title_activity_display_product">DisplayProduct</string>
 
 </resources>

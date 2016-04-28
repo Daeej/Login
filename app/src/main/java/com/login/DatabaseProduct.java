@@ -11,6 +11,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.sql.SQLException;
+
+
 public class DatabaseProduct extends SQLiteOpenHelper{
 
     public  static final int database_version = 1;
@@ -36,6 +39,7 @@ public class DatabaseProduct extends SQLiteOpenHelper{
 
         // TODO Auto-generated method stub
     }
+
     public void insertInformation(DatabaseProduct db, String name, String email, String producttype, String des, String price, String contact){
 
         SQLiteDatabase SQ = db.getWritableDatabase();
@@ -51,12 +55,16 @@ public class DatabaseProduct extends SQLiteOpenHelper{
         Log.d("Product Database", "One row has been inserted");
     }
 
-    public Cursor getInformation (DatabaseProduct db){
-        SQLiteDatabase SQ = db.getReadableDatabase();
-        String[] coloumn = {ProductTableData.ProductTableInfo.NAME, ProductTableData.ProductTableInfo.EMAIL, ProductTableData.ProductTableInfo.PRODUCT_TYPE, ProductTableData.ProductTableInfo.DESCRIPTION,ProductTableData.ProductTableInfo.PRICE, ProductTableData.ProductTableInfo.CONTACT};
-        Cursor Cr = SQ.query(TableData.TableInfo.TABLE_NAME, coloumn,null, null, null, null, null);
-        return  Cr;
+    public Cursor getInformation (SQLiteDatabase db){
+        Cursor Cr;
+        //SQLiteDatabase SQ = db.getReadableDatabase();
+        String[] column = { ProductTableData.ProductTableInfo.PRODUCT_TYPE,ProductTableData.ProductTableInfo.NAME,ProductTableData.ProductTableInfo.PRICE};
+         //String[] column = {ProductTableData.ProductTableInfo.NAME, ProductTableData.ProductTableInfo.EMAIL, ProductTableData.ProductTableInfo.PRODUCT_TYPE, ProductTableData.ProductTableInfo.DESCRIPTION,ProductTableData.ProductTableInfo.PRICE, ProductTableData.ProductTableInfo.CONTACT};
+         Cr = db.query(ProductTableData.ProductTableInfo.TABLE_NAME, column, null, null, null, null, null);
+          return Cr;
 
     }
+
 }
+
 

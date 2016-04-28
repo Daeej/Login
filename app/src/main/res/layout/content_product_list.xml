@@ -17,7 +17,7 @@
         android:id="@+id/productlist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="product Lists"
+        android:text=""
         android:textSize="10pt">
     </TextView>
     <Button
@@ -25,6 +25,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text = "Add your product" />
+
+    <Button
+        android:id="@+id/Listproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "View product"
+        android:layout_marginTop="50dp"
+        android:onClick="displayProducts"
+        />
+
 
 </RelativeLayout>
 
